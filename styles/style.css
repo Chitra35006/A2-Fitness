@@ -61,7 +61,6 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin: 10px 20px;
 }
 nav .logo{
     color: #E6533C;
@@ -90,13 +89,13 @@ nav ul li{
     display: none;
 }
 /* <<<<<<<Banner Styles>>>>>> */
-.main-div-container{
-    margin: 40px 50px;
-}
+/* .main-div-container{
+    margin: 20px 30px;
+} */
 .banner-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 30px;
+    
 }
 .banner-text-container h1{
     font-size: 60px;
@@ -106,7 +105,7 @@ nav ul li{
 .banner-text-container p{
     font-size: 16px;
     font-weight: 400;
-    width: 500px;
+    
     color: #FFFFFF80;
 }
 .banner-text-container{
@@ -122,12 +121,14 @@ nav ul li{
 .button-container{
     gap: 20px;
 }
+
 .banner-img-div img{
-    height: 500px;
+    height: 500px;    
 }
 .banner-img-div{
     width: max-content;
     position: relative;
+    margin-right: 70px;
 }
 .floating-card{
     position: absolute;
@@ -148,7 +149,7 @@ nav ul li{
     margin-right: 10px
 }
 .floating-card.top{
-    top: 25%;
+    top: 22%;
     right: -25%;
 }
 .floating-card.bottom{
@@ -264,6 +265,9 @@ margin-bottom: 40px;
         gap: 20px;
         
     }
+    #banner-caption{
+        text-align: left;
+    }
     .banner-image-container{
         justify-content: center;
     }
@@ -277,9 +281,13 @@ margin-bottom: 40px;
         font-weight: 400;
         color: #FFFFFF80;
     }
+    .banner-img-div{
+        margin-left: 20px;
+    }
+
     .floating-card.top{
-        top: 10%;
-        right: 0;
+        top: 12%;
+        right: 1%;
     }
     .floating-card.bottom{
         bottom: 40%;
