@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden;
+  }
 body{
     background-color: black;
     color: white;
@@ -148,7 +151,10 @@ nav ul li{
 }
 
 /* <<<<<<Mobile View>>>>>> */
-@media screen and (max-width: 425px){
+@media screen and (max-width: 576px){
+    html, body {
+        overflow-x: hidden;
+      }
     .hide-icon{
     display: inline;
     }
@@ -156,6 +162,8 @@ nav ul li{
     display: none;
     }
     nav{
+        display: flex;
+        justify-content: space-between;
         padding: 4px 20px;
     }
     .banner-container{
@@ -166,5 +174,5 @@ nav ul li{
     .banner-image-container{
         justify-content: center;
     }
-    
+
 }
