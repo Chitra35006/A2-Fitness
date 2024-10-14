@@ -321,9 +321,89 @@ margin-bottom: 40px;
     color: white;
     justify-content: end;
 }
-/* .training-img-container{
+/* <<<<BMI calculator styles>>>>  */
+.bmi-calc-container{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.bmi-text-content h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.bmi-text-content{
+    margin-bottom: 40px ;
+}
+.bmi-text-content p{
+    font-size: 14px;
+    width: 800px;
+    word-break: wrap;
+    
+}
+.bmi-container{
+    background: #222222;
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 20px;
+    padding: 50px 130px;
+}
+/* <<<<Chart Div>>>>> */
+.chart-div h3{
+    font-size: 28px;
+    margin-bottom: 45px;
+}
+.chart-div table{
+    border: 1px solid #FFFFFF1A;
+    padding: 20px;
+    border-collapse: collapse;
+}
+.chart-div table th{
+    font-size: 18px;
+}
 
-} */
+.chart-div table th, .chart-div table td{
+    text-align: left;
+    border: 1px solid #FFFFFF1A;
+    padding: 10px 20px;
+}
+.chart-div table td{
+    font-size: 14px;
+    font-weight: 500;
+}
+.td{
+    font-size: 16px;
+    color: #FFFFFF80;
+    font-weight: 400;
+}
+/* <<<<Calc Div>>>>> */
+.calc-div h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.calc-div p{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.calc form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+#span-2{
+    grid-column: span 2;
+}
+input, select{
+    background-color:#ffffff1c ;
+    padding: 12px 15px;
+    border: none;
+    color: #ffffff59;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 100%;
+}
+.option-1{
+    background-color:#635454b4;
+}
+
 /* <<<<<<Mobile View>>>>>> */
 @media screen and (max-width: 576px){
    html, body {
@@ -476,6 +556,33 @@ margin-bottom: 40px;
 .overlay{
     height: 200px;
     font-size: 12px;
+}
+/* <<<<calculator>>>>> */
+.bmi-container{
+    grid-template-columns: 1fr;
+}
+/* <<<<Chart Div>>>>> */
+.chart-div h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.chart-div table{
+    border: 1px solid #FFFFFF1A;
+    padding: 20px;
+    border-collapse: collapse;
+}
+.chart-div table th{
+    font-size: 12px;
+}
+
+.chart-div table th, .chart-div table td{
+    text-align: left;
+    border: 1px solid #FFFFFF1A;
+    padding: 10px 20px;
+}
+.chart-div table td{
+    font-size: 10px;
+    font-weight: 500;
 }
 
 }
