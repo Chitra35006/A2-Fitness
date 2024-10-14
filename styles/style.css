@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden;
+  }
 body{
     background-color: black;
     color: white;
@@ -17,6 +20,13 @@ body{
 }
 .container{
     margin: 0 auto;
+    padding: 10px;
+}
+.color1{
+    color: white;
+}
+.color2{
+    color: #FFFFFF80;
 }
 .primary-Button{
     background-color: #E6533C;
@@ -38,6 +48,9 @@ body{
 }
 .display-flex{
     display: flex;
+}
+.text-center{
+    text-align: center;
 }
 .margin-div{
     margin: 40px 0;
@@ -83,7 +96,7 @@ nav ul li{
 .banner-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 50px;
+    gap: 30px;
 }
 .banner-text-container h1{
     font-size: 60px;
@@ -151,10 +164,50 @@ nav ul li{
     font-weight: 400;
     color: #FFFFFFA6;
 }
-
+/* <<<<<<<habit styles>>>>>> */
+.habit-section{
+margin-bottom: 40px;
+}
+.habit-text-container{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.habit-text-container h2{
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.habit-text-container p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+.habit-image-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.habit-image-div img{
+  border-radius: 50%;
+  margin-left: 22%;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid gray;
+}
+.habit-image-div h3{
+    font-weight: 600px;
+    font-size: 18px;
+}
+.habit-image-div p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+}
 /* <<<<<<Mobile View>>>>>> */
 @media screen and (max-width: 576px){
-   
+   html, body {
+  overflow-x: hidden;
+}
     .hide-icon{
     display: inline;
     }
@@ -165,6 +218,10 @@ nav ul li{
         padding: 4px 20px;
         justify-content: space-between;
         
+    }
+    /* <<<<<banner section>>>>> */
+    .main-div-container{
+        margin: 10px;
     }
     .banner-container{
         grid-template-columns: 1fr;
@@ -182,8 +239,62 @@ nav ul li{
     .banner-text-container p{
         font-size: 12px;
         font-weight: 400;
-        width: 500px;
         color: #FFFFFF80;
+    }
+    .floating-card.top{
+        top: 10%;
+        right: 0;
+    }
+    .floating-card.bottom{
+        bottom: 40%;
+        left: -10%;
+    }
+    .floating-card h5{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .floating-card p{
+        font-size: 10px;
+    }
+    .floating-card{
+        width: 140px;
+        padding: 10px 10px;
+    }
+    .floating-card .circle{
+        width: 20px;
+        height: 20px;
+    }
+   
+    /* <<<<habit section>>>>> */
+    
+    .habit-text-container h2{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .habit-text-container p{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .habit-image-container{
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    .habit-image-div img{
+        margin-left: 28%;
+      }
+    .habit-image-div h3{
+        font-size: 16px;
+    }
+    .habit-image-div p{
+        font-size: 14px;
+        margin-top: 10px;
+        font-weight: 300;
+    }
+    .habit-img-text{
+        margin-left:25% ;
+        width: 250px;
     }
 
 }
