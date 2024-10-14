@@ -560,7 +560,7 @@ input, select{
 /* <<<<calculator>>>>> */
 .bmi-container{
     grid-template-columns: 1fr;
-    padding: 20px 80px;
+    padding: 20px 40px;
 }
 .bmi-calc-container{
     margin-top: 10px;
@@ -575,7 +575,7 @@ input, select{
 }
 .bmi-text-content p{
     font-size: 12px;
-    width: 400px;
+    width: 350px;
     word-break: wrap;
 }
 /* <<<<Chart Div>>>>> */
@@ -592,7 +592,19 @@ input, select{
     margin-bottom: 20px;
 }
 .calc-btn{
+    margin-top: 10px;
     width: 200px;
+}
+input, select{
+    padding: 8px 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.calc form{
+    grid-template-columns: 1fr;
+}
+#span1{
+    margin-right: 20px;
 }
 
 }
