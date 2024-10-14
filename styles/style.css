@@ -194,6 +194,7 @@ margin-bottom: 40px;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-left: 22%;
   border: 2px solid gray;
 }
 .habit-image-div h3{
@@ -211,12 +212,13 @@ margin-bottom: 40px;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 40px;
+    padding: 60px 100px;
 }
 .img-width{
     width: 366px;
     height: 312px;
     object-fit:cover;
+    overflow: hidden;
     
 }
 .run-extra-bg{
@@ -224,7 +226,7 @@ margin-bottom: 40px;
     background-color: rgb(34, 34, 34);
 }
 .extra-image-container img{
-    border-radius: 10%;
+    border-radius: 30px;
     
 }
 .extra-text-container{
@@ -240,6 +242,88 @@ margin-bottom: 40px;
     font-size: 14px;
     margin-bottom: 10px;
 }
+.run-extra-section{
+margin-bottom: 40px;
+}
+/* <<<<<<Training & Exercise styles>>>>> */
+.training-text-container h2{
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.training-text-container p{ 
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.training-text-container{
+    padding-bottom: 30px;
+}
+.training-img-container{
+    margin-bottom: 40px;
+}
+.first-row{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.2fr;
+}
+.second-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card{
+    position: relative;
+    height: 250px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    font-weight: 900;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.overlay-1{
+    background: #06FFD280;
+    color: white;
+    justify-content: end;
+}
+.overlay-2{
+    background: #FF00004D;
+    color: white;
+    justify-content: start;
+}
+.overlay-3{
+    background: #00000080;
+    color: white;
+    justify-content: end;
+}
+.overlay-4{
+    background: #00000080;
+    color: white;
+    justify-content: right;
+}
+.overlay-5{
+    background: #42FF004D;
+    color: white;
+    justify-content: end;
+}
+.overlay-6{
+    background: #0047FF4D;
+    color: white;
+    justify-content: end;
+}
+/* .training-img-container{
+
+} */
 /* <<<<<<Mobile View>>>>>> */
 @media screen and (max-width: 576px){
    html, body {
@@ -267,6 +351,8 @@ margin-bottom: 40px;
     }
     #banner-caption{
         text-align: left;
+        word-wrap: break-word;
+        width: 300px;
     }
     .banner-image-container{
         justify-content: center;
@@ -361,6 +447,35 @@ margin-bottom: 40px;
 }
 .full-width{
     width: 80%;
+}
+/* <<<<Training & Exercise Section>>>>> */
+.training-text-container h2{
+    font-size: 30px;
+}
+.training-text-container p{ 
+    font-size: 12px;
+}
+.first-row{
+    grid-template-columns: 1fr 1fr;
+}
+.second-row{
+    grid-template-columns: 0.9fr 1.1fr;
+}
+.first-row .f-third{
+    display: none;
+}
+.second-row .s-third{
+    display: none;
+}
+.card img{
+    height: 200px;
+}
+.card{
+    height: 200px;
+}
+.overlay{
+    height: 200px;
+    font-size: 12px;
 }
 
 }
