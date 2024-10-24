@@ -37,6 +37,12 @@ body{
     font-size: 14px 30px;
     border-style: none;
 }
+.primary-Button:hover{
+    background-color: #0c0324;
+    color: #FFFFFF80;
+    border-left: 2px solid #E6533C;
+    border-bottom: 2px solid #E6533C;
+}
 .secondary-Button{
     background-color: transparent;
     padding: 15px 30px;
@@ -45,6 +51,14 @@ body{
     font-weight: 800;
     font-size: 14px 30px;
     border: 1px solid white;
+}
+.secondary-Button:hover{
+    background-color: #0c0324;
+    color: #E6533C;
+    border-left: 2px solid #E6533C;
+    border-bottom: 2px solid #E6533C;
+    border-top: none;
+    border-right: none;
 }
 .display-flex{
     display: flex;
@@ -516,7 +530,7 @@ margin-bottom: 20px;
     object-fit: cover;
 }
 .learn-more:hover{
-    transform: rotate(20deg) scale(1.25) translateX(100px);
+    transform: scale(1.25) translateX(100px);
     transform-origin: top right;
 }
 /* <<<<<Footer styles>>>>>> */
