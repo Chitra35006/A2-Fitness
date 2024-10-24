@@ -403,6 +403,118 @@ input, select{
 .option-1{
     background-color:#635454b4;
 }
+/* <<<<<<Meet Team Styles>>>>> */
+.meet-text-container h3{
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.meet-text-container p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.meet-team-img-container{
+    background: #222222;
+    padding: 20px;
+    margin-top: 40px;
+}
+.meet-team-img-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.img-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 30px;
+    
+}
+.img-card{
+    position: relative;
+    height: 280px;
+    background: #cc2525;
+    
+}
+.overlay-i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+.overlay-i2{
+    background: #7e7e7e3b;
+}
+.overlay-i h4{
+    font-size: 18px;
+    font-weight: 900;
+}
+.overlay-i p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(204, 190, 190);
+}
+/* <<<<<Footer styles>>>>>> */
+footer{
+    background: #222222;
+    margin-top: 40px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    padding: 40px;
+    border-bottom: 2px solid #FFFFFF80;
+}
+.footer-container h1{
+ color: #E6533C;
+ font-size: 60px;
+ font-weight: 800;
+ margin-bottom: 20px;
+ font-style: italic;
+}
+.footer-container p{
+ font-size: 14px;
+ font-weight: 400;
+}
+.link-column{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.link-column h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.link-column ul{
+    list-style-type: none;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF80;
+}
+.copy-right-container h3{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+}
 
 /* <<<<<<Mobile View>>>>>> */
 @media screen and (max-width: 576px){
@@ -605,6 +717,56 @@ input, select{
 }
 #span1{
     margin-right: 20px;
+}
+/* <<<<<Meet Our Team Styles>>>>> */
+.meet-team-img-div{
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.img-card img{
+    height: 200px;
+}
+.img-card{
+    height: 200px;
+}
+.overlay-i{
+    height: 200px;
+}
+.meet-text-container h3{
+    font-size: 30px;
+}
+.meet-text-container p{
+    font-size: 12px;
+}
+/* <<<<Footer styles>>>>> */
+.footer-container{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+.footer-container h1{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+   }
+   .link-column{
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.link-column h3{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.link-column h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.link-column ul{
+    margin-top: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 }
