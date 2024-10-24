@@ -424,8 +424,7 @@ input, select{
     width: 80%;
     height: auto;
     margin: 0 auto;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 .meet-team-img-div{
     display: grid;
@@ -443,7 +442,6 @@ input, select{
 .img-card{
     position: relative;
     height: 280px;
-    /* background: #cc2525; */
     
 }
 .overlay-i{
@@ -776,6 +774,11 @@ input, select{
     margin-right: 20px;
 }
 /* <<<<<Meet Our Team Styles>>>>> */
+.meet-team-img-container{
+    padding: 15px;
+    margin-top: 30px;
+    width: 90%;
+}
 .meet-team-img-div{
     grid-template-columns: 1fr;
     gap: 20px;
